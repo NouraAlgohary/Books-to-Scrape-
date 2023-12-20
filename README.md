@@ -16,9 +16,9 @@ Whether you're new to web scraping or just looking for a straightforward example
 
 ## Steps
 ### Setting Up Liberaries
-Selenium is a powerful web automation library for Python, widely used for web scraping and testing.
-``` pip install selenium```
-Pandas is a versatile data manipulation library in Python, commonly employed for data analysis and storage, such as saving data to CSV files.
+Selenium is a powerful web automation library for Python, widely used for web scraping and testing.</br>
+```pip install selenium```</br>
+Pandas is a versatile data manipulation library in Python, commonly employed for data analysis and storage, such as saving data to CSV files.</br>
 ```pip install pandas```
 
 ### Getting Started
@@ -28,7 +28,7 @@ driver = webdriver.Chrome()
 url = "http://books.toscrape.com/"
 driver.get(url)
 ```
-Chrome must be loaded with the message
+Chrome must be loaded with the message</br>
 ```Chrome is being controlled by automated test software.```
 ### Explicit Waits
 ```
@@ -53,7 +53,17 @@ try:
 ```
 
 ### Data Extraction
-- 
+Locaters using 
+``` By.```
+```from selenium.webdriver.common.by import By```
+- ```find_element(By.CSS_SELECTOR, some_string)``` Finds element using CSS selector. It performs the same tasks as the old one. ```find_element_by_css_selector```
+- ```find_element(By.XPATH, some_string)``` Finds elment by XPATH instead of ```find_element_by_xpath```
+- ```find_element(By.CLASS_NAME, some_string)``` Finds element by Class Name as the old one did ```find_element_by_class_name```
+  These methods return an instance of ```WebElement```
+#### WebElement
+- ```element.text``` Accessing text element
+- ```element.click()``` Clicking on the element
+- ```element.get_attribute(‘class’)``` Accessing attribute class, title...etc
 
 ### Finally
 Close the browser
