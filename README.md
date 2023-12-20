@@ -13,3 +13,48 @@ Whether you're new to web scraping or just looking for a straightforward example
 
 ## [2. Quotes to Scrape](https://quotes.toscrape.com/)
 ![image](https://github.com/NouraAlgohary/Web-Scraping/assets/103903785/d34bbf5d-5799-47ec-8309-2f2f3911e199)
+
+## Steps
+### Setting Up Liberaries
+Selenium is a powerful web automation library for Python, widely used for web scraping and testing.
+``` pip install selenium```
+Pandas is a versatile data manipulation library in Python, commonly employed for data analysis and storage, such as saving data to CSV files.
+```pip install pandas```
+
+### Getting Started
+Create a webdriver instance</br>
+```
+driver = webdriver.Chrome()
+url = "http://books.toscrape.com/"
+driver.get(url)
+```
+Chrome must be loaded with the message
+```Chrome is being controlled by automated test software.```
+### Explicit Waits
+```
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+try:
+            # Explicitly wait for the next page button to be present
+            WebDriverWait(driver, 20).until(EC.presence_of_element_located(next_page_button_locator))
+
+            # Explicitly wait for the next page button to be clickable
+            WebDriverWait(driver, 20).until(EC.element_to_be_clickable(next_page_button_locator))
+
+            # Find the next page button and click it
+            next_page_button = driver.find_element(*next_page_button_locator)
+            next_page_button.click()
+
+
+        except Exception as e:
+            print(f"Exception: {type(e).__name__} - {e}. Refreshing the page and retrying click.")
+            driver.refresh()
+```
+
+### Data Extraction
+- 
+
+### Finally
+Close the browser
+```driver.quit()```
