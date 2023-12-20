@@ -28,15 +28,16 @@ Pandas is a versatile data manipulation library in Python, commonly employed for
 ```pip install pandas```
 
 ### Getting Started
-Create a webdriver instance</br>
+1. Create a webdriver instance</br>
 ```
 driver = webdriver.Chrome()
 url = "http://books.toscrape.com/"
 driver.get(url)
 ```
-Chrome must be loaded with the message</br>
+2. Chrome must be loaded with the message</br>
 ```Chrome is being controlled by automated test software.```
 ### Explicit Waits
+Use explicit waits for a smoother web scraping experience:</br>
 ```
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -59,7 +60,7 @@ try:
 ```
 
 ### Data Extraction
-Locaters using 
+Use various locators using By for element identification:</br>
 ``` By.```
 ```
 from selenium.webdriver.common.by import By
