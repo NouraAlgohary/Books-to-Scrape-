@@ -13,7 +13,7 @@ driver.get(url)
 
 books_list = []
 
-#Class name for the class that contains all book information 
+#Class name for the class that contains all book information
 class_name = '.col-xs-6, .col-sm-4, .col-md-3, .col-lg-3'num_pages = 50
 
 # Locator for the next page button
