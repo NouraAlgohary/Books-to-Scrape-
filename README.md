@@ -55,16 +55,31 @@ try:
 ### Data Extraction
 Locaters using 
 ``` By.```
-```from selenium.webdriver.common.by import By```
+```
+from selenium.webdriver.common.by import By
+```
 - ```find_element(By.CSS_SELECTOR, some_string)``` Finds element using CSS selector. It performs the same tasks as the old one. ```find_element_by_css_selector```
 - ```find_element(By.XPATH, some_string)``` Finds elment by XPATH instead of ```find_element_by_xpath```
 - ```find_element(By.CLASS_NAME, some_string)``` Finds element by Class Name as the old one did ```find_element_by_class_name```
   These methods return an instance of ```WebElement```
+  
 #### WebElement
-- ```element.text``` Accessing text element
 - ```element.click()``` Clicking on the element
 - ```element.get_attribute(‘class’)``` Accessing attribute class, title...etc
+- - ```element.text``` Accessing text element
+ 
+### Store data
+Save a list of lists as a data frame using Pandas</br>
+```
+df = pd.DataFrame(books_list)
+```
+Save the data frame to a CSV file for further use</br>
+```
+df.to_csv('path-to-folder/booksToScrape.csv', index=True)
+```
 
 ### Finally
 Close the browser
-```driver.quit()```
+```
+driver.quit()
+```
