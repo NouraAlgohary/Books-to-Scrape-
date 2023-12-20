@@ -17,6 +17,8 @@ Whether you're new to web scraping or just looking for a straightforward example
 ## Files 
 - [booksToScrape.csv](https://github.com/NouraAlgohary/Web-Scraping/blob/main/booksToScrape.csv) Books data as a CSV file
 - [quotesToScrape.csv](https://github.com/NouraAlgohary/Web-Scraping/blob/main/QuotesToScrape.csv) Quotes data as a CSV file
+- [books_web_scraping.py](https://github.com/NouraAlgohary/Web-Scraping/blob/main/books_web_scraping.py) Books website web scraping code
+- [quotes_web_scraping.py](https://github.com/NouraAlgohary/Web-Scraping/blob/main/quotes_web_scraping.py) Quotes website web scraping code
 
 ## Steps
 ### Setting Up Libraries
