@@ -14,8 +14,12 @@ Whether you're new to web scraping or just looking for a straightforward example
 ## [2. Quotes to Scrape](https://quotes.toscrape.com/)
 ![image](https://github.com/NouraAlgohary/Web-Scraping/assets/103903785/d34bbf5d-5799-47ec-8309-2f2f3911e199)
 
+## Files 
+- [booksToScrape.csv](https://github.com/NouraAlgohary/Web-Scraping/blob/main/booksToScrape.csv) Books data as a CSV file
+- [quotesToScrape.csv](https://github.com/NouraAlgohary/Web-Scraping/blob/main/QuotesToScrape.csv) Quotes data as a CSV file
+
 ## Steps
-### Setting Up Liberaries
+### Setting Up Libraries
 Selenium is a powerful web automation library for Python, widely used for web scraping and testing.</br>
 ```pip install selenium```</br>
 Pandas is a versatile data manipulation library in Python, commonly employed for data analysis and storage, such as saving data to CSV files.</br>
